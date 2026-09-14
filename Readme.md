@@ -1,3 +1,3 @@
 #test
 
-Main branch version: Git fundamentals - branches, merges, and conflict resolution
+This is the main branch version.
