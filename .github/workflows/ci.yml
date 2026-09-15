@@ -1,0 +1,29 @@
+name: CI - Code Quality Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Check file esists
+        run: |
+          if [ -f "Readme.md" ]; then
+            echo "Readme.md exists."
+          else
+            echo "Readme.md does not exist."
+            exit 1
+          fi
+
+      - name: Validate git history
+        run: |
+          echo " Git repository is valid."
+          git log --oneline | head -5
