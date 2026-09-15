@@ -6,3 +6,4 @@ Main branch is also moving forward
 Line 1: First rebase commit
 LIne 2: SEcond Rebase commit
 
+This repo demonstrates CI/CD with Github Actions.
