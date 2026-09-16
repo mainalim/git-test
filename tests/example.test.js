@@ -16,12 +16,12 @@ const test1 = () => {
 };
 
 const test2 = () => {
-  const content = fs.readFileSync('README.md', 'utf-8');
+  const content = fs.readFileSync('Readme.md', 'utf-8');
   if (content.length > 10) {
-    console.log('✅ Test 2 PASSED: README.md has content');
+    console.log('✅ Test 2 PASSED: Readme.md has content');
     return true;
   } else {
-    console.log('❌ Test 2 FAILED: README.md is empty');
+    console.log('❌ Test 2 FAILED: Readme.md is empty');
     return false;
   }
 };
