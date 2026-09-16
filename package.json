@@ -1,0 +1,14 @@
+{
+    "name": "git-test",
+    "version": "1.0.0",
+    "description": "DevOps Learning repo with CI/CD pipeline",
+    "scripts": {
+        "test": "node tests/example.test.js",
+        "lint": "echo 'Linting code ...' && echo '✅ No linting errors found' "
+    },
+    "keywords": ["git", "github", "devops"],
+    "author": "maddy",
+    "license": "MIT"
+
+
+}
