@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 console.log('🧪 Running Tests...\n');
-
+var unused = 5;
 
 
 //Test1: check if Readme.md exists
