@@ -66,4 +66,4 @@ jobs:
           API_Key: ${{ secrets.DEOMO_API_KEY }}
         run: |
           echo "key length check: ${#API_Key} characters"
-          echo "Attempting to print it directly: `$API_Key"
+          echo "Attempting to print it directly: $API_Key"
