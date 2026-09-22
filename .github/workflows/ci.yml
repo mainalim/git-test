@@ -60,3 +60,10 @@ jobs:
       
       - name: Run security audit
         run: echo "🔒 Security scan completed - No vulnerabilities found"
+
+      - name: Use a Secret Safely
+        env:
+          API_Key: ${{ secrets.DEOMO_API_KEY }}
+        run: |
+          echo "key length check: ${#API_Key} characters"
+          echo "Attempting to print it directly: `$API_Key"
